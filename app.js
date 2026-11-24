@@ -94,6 +94,10 @@ app.use((err,req,res,next) =>{
     // res.status(status).send(message);
 })
 
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
 app.listen(8081,()=>{
    console.log("server is listening to port :8081");
 });
