@@ -60,11 +60,14 @@ body{
   /* margin-left: 3.4rem; */
   border: none !important   ;
   margin-bottom: 2rem;
+
 }
+
 
 .card-img-top{
     border-radius: 1rem !important;
     width: 100% !important;
+    
     height: 13rem !important;
     object-fit: cover !important;
 }
@@ -76,6 +79,7 @@ body{
 
 
 .card-text{
+    margin-top: 0.3rem;
   font-weight: 400;
   font-size: 0.9rem;
   line-height: 1.3;
@@ -96,21 +100,77 @@ body{
     background-color: white;
 }
 
-/*new page*/
-.add-btn{
-    background-color: #fe424d !important;
-    border: none !important;
-}
 
-/* Edit page*/
-.edit-btn{   
+/* Edit listing page */
+
+.edit-listing-wrapper {
+    max-width: 750px;
+    margin: 35px 30px 60px 380px;
+    padding: 35px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  }
+
+  .edit-listing-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+  }
+
+  .edit-listing-subtitle {
+    color: #777;
+    margin-bottom: 28px;
+  }
+
+   .edit-listing-wrapper .form-label {
+    font-weight: 600;
+    margin-bottom: 8px;  
+  }
+
+   .edit-listing-wrapper .form-control {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+   .edit-listing-wrapper textarea {
+    min-height: 130px;
+    resize: vertical;
+  }
+
+   .original-image-box {
+    margin-top: 10px;
+    padding: 15px;
+    background: #f8f8f8;
+    border: 1px solid #eee;
+    border-radius: 12px;
+  }
+
+    .original-image {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    max-height: 220px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+ .edit-btn{   
      background-color: #fe424d !important;
      border: none !important;
 }
 
 /* Show page */
-.show-img{
-    height: 30vh;
+.show-img {
+    width: 50rem;
+    height: 20rem;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 1rem;
 }
 
 .btns{
@@ -158,13 +218,6 @@ footer{
 }
 
 
-/* index responsive design*/
-
-@media (max-width: 780px) {
-    #filters .filter:nth-child(n+6) {
-        display: none;
-    }
-}
 
 .search-inp {
     width: 320px !important;
@@ -187,3 +240,9 @@ footer{
     color: white;
     white-space: nowrap;
 }
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+

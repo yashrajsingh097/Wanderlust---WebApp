@@ -1,10 +1,40 @@
 
-   <%- layout("layouts/boilerplate") %>
- <!-- <div class="container"> -->
-<div class="row mt-3">
-<div class="col-8 offset-2">
+<%- layout("layouts/boilerplate") %>
+<style>
+.new-listing-wrapper {
+    max-width: 750px;
+    margin: 35px 30px 60px 380px;
+    padding: 35px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  }
+
+  .new-listing-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #222;
+  }
+
+   .new-listing-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 12px;
+    background-color: #fe424d;
+    border: none;
+  }
+
+</style>
+
+<div class=" container row  ">
+<div class="new-listing-wrapper col-8 offset-2">
   <!-- <br><br/> -->
-  <h3>Create a New Listing</h3>
+   
+  <h3 class="new-listing-title">Create a New Listing</h3>
   <form method="POST" action="/listings" noValidate class="needs-validation" enctype="multipart/form-data">
     <div class="mb-3">
       <label for="title" class="form-label">Title</label>
@@ -75,9 +105,9 @@
       <div class="invalid-feedback">Please enter the location.</div>
     </div>
     <br>
-    <button class="btn btn-dark add-btn ">Add</button>
+    <button class="btn btn-dark add-btn new-listing-btn">Add   Listing</button>
     <br><br/>
   </form>
 </div>
 </div>
-    <!-- </div> -->
+  
